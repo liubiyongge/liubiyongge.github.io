@@ -9,7 +9,7 @@ tags:
   - 搭建博客
 ---
 
-- 这篇文章参考https://keysaim.github.io/post/blog/2017-08-15-how-to-setup-your-github-io-blog/搭建
+这篇文章参考 [链接](https://keysaim.github.io/post/blog/2017-08-15-how-to-setup-your-github-io-blog/搭建)
 - 我的博客界面如下
 
 ![img](/img/in-post/blog_face.png)
@@ -26,3 +26,12 @@ $ git commit -m "Add how to setup your github.io blog"
 $ git push mine master
 ```
 
+### PORTFOLIO
+
+- 作品展示
+
+请编辑`/portfolio/index.html`
+
+#### ABOUT
+
+请编辑_includes/about
