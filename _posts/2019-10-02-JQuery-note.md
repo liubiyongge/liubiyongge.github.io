@@ -153,3 +153,55 @@ jQuery 方法链接
 
 ## jQuery 遍历
 
+`祖先`
+
+- parent()
+- parents()
+- parentsUntil()
+
+`后代`
+
+- children()
+- find()
+
+`同胞`
+
+- siblings()
+- next()
+- nextAll()
+- nextUntil()
+- prev()
+- prevAll()
+- prevUntil()
+
+`过滤`
+
+三个最基本的过滤方法是：first(), last() 和 eq()，它们允许您基于其在一组元素中的位置来选择一个特定的元素。
+
+其他过滤方法，比如 filter() 和 not() 允许您选取匹配或不匹配某项指定标准的元素。
+
+## AJAX
+
+在不重载整个网页的情况下，AJAX 通过后台加载数据，并在网页上进行显示。
+
+`load`
+
+$(selector).load(URL,data,callback);
+
+必需的 *URL* 参数规定您希望加载的 URL。
+
+可选的 *data* 参数规定与请求一同发送的查询字符串键/值对集合。
+
+可选的 *callback* 参数是 load() 方法完成后所执行的函数名称。
+
+可选的 callback 参数规定当 load() 方法完成后所要允许的回调函数。回调函数可以设置不同的参数：
+
+- *responseTxt* - 包含调用成功时的结果内容
+- *statusTXT* - 包含调用的状态
+- *xhr* - 包含 XMLHttpRequest 对象
+
+`get()`
+
+$.get(*URL*,*callback*);
+
+`post()`
