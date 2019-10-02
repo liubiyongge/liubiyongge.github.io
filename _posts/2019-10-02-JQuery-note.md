@@ -111,3 +111,45 @@ jQuery 方法链接
 
  `$("#p1").css("color","red").slideUp(2000).slideDown(2000);`
 
+## JQuery HTML
+
+`设置`
+
+- text() - 设置或返回所选元素的文本内容
+- html() - 设置或返回所选元素的内容（包括 HTML 标记）
+- val() - 设置或返回表单字段的值
+- attr() - 获取属性
+
+`添加元素`
+
+- append() - 在被选元素的结尾插入内容（仍然该元素的内部）
+- prepend() - 在被选元素的开头插入内容（仍然该元素的内部）
+- after() - 在被选元素之后插入内容
+- before() - 在被选元素之前插入内容
+
+`删除元素`
+
+- remove() - 删除被选元素（及其子元素）
+- empty() - 从被选元素中删除子元素
+
+`css类`
+
+- addClass() - 向被选元素添加一个或多个类
+- removeClass() - 从被选元素删除一个或多个类
+- toggleClass() - 对被选元素进行添加/删除类的切换操作
+- css("*propertyname*","*value*"); - 设置或返回样式属性
+- css({"*propertyname*":"*value*","*propertyname*":"*value*",...});
+
+`尺寸方法`
+
+- width()
+- height()
+- innerWidth()
+- innerHeight()
+- outerWidth()
+- outerHeight()
+
+![jQuery Dimensions](https://www.runoob.com/images/img_jquerydim.gif)
+
+## jQuery 遍历
+

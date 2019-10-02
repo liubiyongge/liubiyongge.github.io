@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "ACM Note"
+title:      "Algorithm"
 subtitle:   ""
 date:       2019-09-28
 author:     "LiuBiyongge"
