@@ -245,3 +245,244 @@ random();//This library allows to produce random numbers using combinations of g
   - 如果2i+1>n，则节点i无有右孩子；否则其右孩子就是2i+1
 
 ![1570371626125](../img/bitTree.png)
+
+---
+
+```
+vector<type>(n);
+
+struct node{
+	type data;
+	node * leftChild;
+    node * rightChild;
+}
+```
+
+---
+
+![img](https://img-blog.csdn.net/20180507110445948?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzMjQzMTg5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+```c++
+  node * root = new node;
+    root->data = 'A';
+    root->leftChild = new node;
+    root->leftChild->data = 'B';
+    root->leftChild->leftChild = NULL;
+    root->leftChild->rightChild = new node;
+    root->leftChild->rightChild->data = 'C';
+    root->leftChild->rightChild->leftChild = new node;
+    root->leftChild->rightChild->leftChild->data = 'D';
+    root->leftChild->rightChild->leftChild->rightChild = NULL;
+    root->leftChild->rightChild->leftChild->leftChild = NULL;
+    root->leftChild->rightChild->rightChild = NULL;
+    root->rightChild = new node;
+    root->rightChild->data = 'E';
+    root->rightChild->leftChild = NULL;
+    root->rightChild->rightChild = new node;
+    root->rightChild->rightChild->data = 'F';
+    root->rightChild->rightChild->leftChild = new node;
+    root->rightChild->rightChild->rightChild = NULL;
+    root->rightChild->rightChild->leftChild->data = 'G';
+    root->rightChild->rightChild->leftChild->leftChild = new node;
+    root->rightChild->rightChild->leftChild->leftChild->data = 'H';
+    root->rightChild->rightChild->leftChild->leftChild->leftChild = NULL;
+    root->rightChild->rightChild->leftChild->leftChild->rightChild = NULL;
+    root->rightChild->rightChild->leftChild->rightChild = new node;
+    root->rightChild->rightChild->leftChild->rightChild->data = 'K';
+    root->rightChild->rightChild->leftChild->rightChild->leftChild = NULL;
+    root->rightChild->rightChild->leftChild->rightChild->rightChild = NULL;
+```
+
+
+
+- 先序
+
+```c++
+void preOrderTravel(node * root){
+    stack<node *> treestack; // build stack
+    node * p = root;// p pointer root
+    while (p != NULL || !treestack.empty()){//
+        if(p != NULL){
+            cout << p->data;
+            treestack.push(p);
+            p = p->leftChild;
+        } else{
+            p = treestack.top();
+            treestack.pop();
+            p = p->rightChild;
+        }
+    }
+
+}
+```
+- 中序
+
+```c++
+void inOrderTravel(node *root){
+    stack<node *> treeStack;
+    node * p = root;
+    while (p != NULL || !treeStack.empty()){
+        if(p != NULL){
+            treeStack.push(p);
+            p = p->leftChild;
+        } else{
+            p = treeStack.top();
+            treeStack.pop();
+            cout << p->data;
+            p = p->rightChild;
+
+        }
+    }
+
+}
+```
+- 后序
+
+```c++
+void postOrderTravel(node * root){
+    if(root == NULL)return;
+    stack<node *> treestack;
+    node * p, *plast;
+    p = root;
+    plast = NULL;
+    while (p){
+        treestack.push(p);
+        p  = p->leftChild;
+    }
+
+    while (!treestack.empty()){
+        p = treestack.top();
+        treestack.pop();
+
+        if(p->rightChild == NULL || p->rightChild == plast){
+            cout << p->data;
+            plast = p;
+        } else{
+            treestack.push(p);
+            p = p->rightChild;
+            while (p){
+                treestack.push(p);
+                p = p->leftChild;
+            }
+        }
+    }
+}//每次到最左，记录last访问
+```
+
+
+
+- 层次遍历
+
+```c++
+void layerTravel(node * root){
+    if(root == NULL){
+        return;
+    }
+    queue<node *> myqueue;
+    myqueue.push(root);
+    node * p;
+    while (!myqueue.empty()){
+        p = myqueue.front();
+        myqueue.pop();
+        cout << p->data;
+        if(p->leftChild != NULL){
+            myqueue.push(p->leftChild);
+        }
+        if(p->rightChild != NULL){
+            myqueue.push(p->rightChild);
+        }
+    }
+}
+```
+
+----
+
+### 图
+
+- 有向图
+- 无向图
+- 完全图
+- 稀疏图
+- 稠密图
+- 子图
+
+----
+
+- 邻接点
+
+- 相关联
+- 度
+- 入度
+- 出度
+
+----
+
+- 回路/环
+
+- 简单路径
+- 连通
+- 连通图
+- 连通分量
+- 强连通图
+- 强连通分量
+- 连通图生成树
+
+----
+
+#### 数组表示法
+
+```c++
+class MGrapg{
+	VertexType vexs[MAX_VERTEX_NYM];
+	AdjMatrix arcs;//邻接矩阵
+	int vexnum, arcnum;
+	GraphKind kind;
+}
+```
+
+![img](https://img-blog.csdnimg.cn/20181208230623850.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3ljaGho,size_16,color_FFFFFF,t_70)
+
+#### 邻接表
+
+```c++
+struct ArcNode{
+	int adjvex;//该弧指向顶点的位置
+	struct ArcNode *nextarc;//只写下一条弧的指针
+	InfoType *info;//该弧有关的信息
+};
+
+struct Vnode{
+	VertexType data;//顶点信息
+	ArcNode * firstarc;
+};
+
+struct ALGraph{
+	AdjList vertices;
+	int vexnum, arcnum;
+	int kind;
+}
+```
+
+![img](https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=f912d7d98d94a4c21e2eef796f9d70b0/4e4a20a4462309f7bfc89bc4780e0cf3d6cad644.jpg)
+
+#### 图的遍历
+
+##### DFS
+
+Depth First Search
+
+ 首先访问一个相邻顶点，并继续访问该相邻顶点的一个相邻顶点，重复执行直到当前正在被访问的顶点不存在未访问状态的相邻顶点，则回退到上一个顶点继续按照该深度优先方式访问。因为存在回溯行为，所以需要借助栈结构保存顶点，或者直接利用递归调用产生的方法栈帧来完成回溯。 
+
+ ![digraph](https://camo.githubusercontent.com/1ef8bce91dad7f76121735ce4e1c81b62041e45b/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f393733383830372d383234323438663032613565633866342e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430) 
+
+从1开始，一个访问顺序为1-2-3-5-4
+
+##### BFS
+
+Breadth First Search
+
+ 一次性访问当前顶点的所有未访问状态相邻顶点，并依次对每个相邻顶点执行同样处理。因为要依次对每个相邻顶点执行同样的广度优先访问操作，所以需要借助队列结构来存储当前顶点的相邻顶点。 
+
+![digraph](https://camo.githubusercontent.com/1ef8bce91dad7f76121735ce4e1c81b62041e45b/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f393733383830372d383234323438663032613565633866342e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430)
+
+从1开始，一个访问顺序为1-2-4-3-5

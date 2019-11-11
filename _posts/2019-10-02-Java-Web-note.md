@@ -180,7 +180,7 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 
 Class.forName("com.mysql.cj.jdbc.Driver");
-Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306?serverTimezone=UTC,"password");
+Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306?serverTimezone=UTC","root","password");
 
 Statement stat = conn.createStatement();
 stat.executeQuery(SQL语句);
