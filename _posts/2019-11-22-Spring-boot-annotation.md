@@ -157,6 +157,10 @@ While developing [RESTful Web Services](https://javabeat.net/spring-4-rest-examp
 
  A Java class decorated with `@Component` is found during classpath scanning and registered in the context as a Spring bean, 如 `Spring Boot拦截器`, ` Spring Boot Servlet过滤器 ` 
 
+###  `@Data` 
+
+是 lombok 的注解，自动生成Getter，Setter，toString，构造函数等 
+
 ### 服务组件
 
 ####  `@Service` 
