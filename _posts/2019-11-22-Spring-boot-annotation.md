@@ -48,6 +48,9 @@ annotation we inject our `AppName` bean into the field.
     private AppName appName;
 ```
 
+
+​		any method annotated with `@Autowired` is a config method. It is called on bean instantiation after field injection is done. The arguments of the method are injected into the method on calling.
+
 ### `@Bean@ Configuration`[^5][^7][^8]   
 
 execute that method and register the return value as a bean within a `BeanFactory`. By default, the bean name will be the same as the method name,@Configuration可理解为用spring的时候xml里面的`<beans>`标签 @Bean可理解为用spring的时候xml里面的`<bean>`标签
