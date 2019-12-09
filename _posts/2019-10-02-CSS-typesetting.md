@@ -28,6 +28,10 @@ tags:
 
 ## BOX模型
 
+```
+一定要border的样式，宽度，颜色都要设置才可以的！！ 
+```
+
 ![CSS box-model](https://www.runoob.com/images/box-model.gif)
 
 ![img](https://www.runoob.com/wp-content/uploads/2013/08/VlwVi.png)
@@ -92,6 +96,8 @@ tags:
 - display:inline-block -- 显示为内联块元素，表现为同行显示并可修改宽高内外边距等属性
 
 我们常将<ul>元素加上display:inline-block样式，原本垂直的列表就可以水平显示了。
+
+> 块级元素对齐通过margin实现，内联元素对齐通过text-align实现，text-align 属性规定元素中的文本的水平对齐方式。
 
 ## Position
 
