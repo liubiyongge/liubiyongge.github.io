@@ -35,3 +35,7 @@ $ git push mine master
 #### ABOUT
 
 请编辑_includes/about
+
+## 插入图片
+
+点击`格式`->`图像`->`设置图片根目录`,选择根目录为你的博客文件根目录，然后用`/img/in-post/***.**`插入图片
