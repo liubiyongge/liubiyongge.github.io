@@ -25,5 +25,5 @@ I'm Biyong Liu, currently studying for a Master's Degree at Huazhong University 
 ## Publications
 
 ## Contact
-* Email: <liubiyongge@hust.edu.cn>
+* Email: <liubiyongge@163.com>
 * Github: [liubiyongge](https://github.com/liubiyongge)
