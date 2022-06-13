@@ -18,13 +18,12 @@ where I was advised by [Zichen Xu](https://good.ncu.edu.cn/Pages/Professor.html)
 
 - B.E degree in Network Engineering, School Of QingHu, NanChang University, China, 2017-2021
 
-### Interests and Projects
-- Key-value store: Rocksdb
-- Distributed storage: Ceph
-- Computational storage
+### Research and Projects
+I am interested in storage systems, especially KV stores. In the past, I have been trying to design a new LSMT-based KV store based on ZNS SSD to reduce write amplification. My current research focuses on designing new Replica management for distributed LSMT-based KV stores to reduce compaction overhead. In addition, I have participated in a computational storage project corporating with Huawei. In the project, we designed an object interface-based computational storage device and accelerated Spark SQL by offloading select statements to the device.
 
 ### Publications
 
+### Internships
 
 ### Awards
 
