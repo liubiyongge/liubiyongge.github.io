@@ -28,7 +28,7 @@ where I was advised by [Zichen Xu](https://good.ncu.edu.cn/Pages/Professor.html)
 
 ### Awards
 
-- Second Prize of [ASC Student Supercomputer Challenge](http://www.asc-events.org/) in 2021
+- Second Prize of [ASC Student Supercomputer Challenge](http://www.asc-events.org/) in 2019
 - Second Prize at National Level of [CUMCM](http://www.mcm.edu.cn/) in 2019
 - Second Prize of [Lanqiao Cup Programming Competition](https://dasai.lanqiao.cn/pages/dasai/index.html) in 2020
 - Nanchang University Special Scholarship in 2018
