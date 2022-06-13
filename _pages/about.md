@@ -34,7 +34,3 @@ I am interested in storage systems, especially KV stores. In the past, I have be
 - Second Prize at National Level of [CUMCM](http://www.mcm.edu.cn/) in 2019
 - Second Prize of [Lanqiao Cup Programming Competition](https://dasai.lanqiao.cn/pages/dasai/index.html) in 2020
 - Nanchang University Special Scholarship in 2018
-
-### Contact
-* Email: <liubiyongge@163.com>
-* Github: [liubiyongge](https://github.com/liubiyongge)
