@@ -26,6 +26,8 @@ I am interested in storage systems, especially KV stores. In the past, I have be
 
 ### Publications
 
+- Denghui Wu, **Biyong Liu**, Wei Zhao, Wei Tong, “ZNSKV: Reducing Data Migration in LSMT-Based KV Stores on ZNS SSDs” is accepted by 40th IEEE International Conference on Computer Design (ICCD), 2022. (CCF B)
+
 ### Internships
 
 ### Awards
