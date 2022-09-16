@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Biyong Liu's Site"
 title_separator          : "-"
-name                     : &name "Biyong Liu"
+name                     : &name "Biyong Liu (刘必勇)"
 description              : &description "Master Candidate at HUST"
 url                      : https://liubiyongge.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"

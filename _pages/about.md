@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Biyong Liu"
+title: "Biyong Liu (刘必勇)"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
