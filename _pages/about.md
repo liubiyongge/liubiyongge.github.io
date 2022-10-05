@@ -14,7 +14,7 @@ where I was advised by [Zichen Xu](https://good.ncu.edu.cn/Pages/Professor.html)
 
 
 ### Research and Projects
-I am interested in storage systems, especially KV stores. In the past, I have been trying to design a new LSMT-based KV store on ZNS SSD to reduce write amplification. My current research focuses on designing a new Replica management mechanism for distributed LSMT-based KV stores to reduce compaction overhead. In addition, I have participated in a computational storage project corporating with Huawei. In the project, we designed an object interface-based computational storage device and accelerated Spark SQL by offloading select statements to the device.
+I am interested in storage systems, especially KV stores. My current research focuses on designing a compaction scheme for LSMT-based KV stores to reduce write amplification. In addition, I have participated in a computational storage project collaborating with Huawei. In the project, we designed an object interface-based computational storage device and accelerated Spark SQL by offloading select statements to the device.
 
 ### Education
 
@@ -26,8 +26,16 @@ I am interested in storage systems, especially KV stores. In the past, I have be
 
 ### Publications
 
-- Denghui Wu, **Biyong Liu**, Wei Zhao, Wei Tong, “ZNSKV: Reducing Data Migration in LSMT-Based KV Stores on ZNS SSDs” is accepted by 40th IEEE International Conference on Computer Design (ICCD), 2022. (CCF B)
+- Denghui Wu, **Biyong Liu**, Wei Zhao, Wei Tong, "ZNSKV: Reducing Data Migration in LSMT-Based KV Stores on ZNS SSDs" is accepted by 40th IEEE International Conference on Computer Design (ICCD), 2022.
 
+&ensp;&ensp;In this paper, we propose our ZNS SSD based KV store ZNSKV to reduce the redundant data migration in garbage collection and LSMT compaction. 
+
+- Xiaoling Li, Tao Zeng, **Biyong Liu**, et al. "Nonintrusive Measurement on Temporal and Spatial Features of Microservice Inferences" is accepted by 19th IEEE International Conference on Ubiquitous Intelligence and Computing, 2022.
+
+&ensp;&ensp;In this paper, we propose a framework to provide nonintrusive measurements on microservice inference (MEME), to detect fraudulent behaviors of cloud service providers on microservice-based applications. (My undergraduate thesis)
+
+
+  
 ### Internships
 
 ### Awards
