@@ -2,6 +2,6 @@
 main:
     - title: "Personal Experience"
       url: /experience/
-  # - title: "Publications"
-  #   url: /publications/
+    - title: "Blogs"
+      url: /blogs/
     

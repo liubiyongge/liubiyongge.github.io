@@ -1,0 +1,16 @@
+<!-- <link rel="stylesheet" href="/assets/css/index.css"> -->
+
+<!-- <div class="sticky"> -->
+    <h3 align="center">Blog Tags</h3>
+    <div id="blog-tags">
+        <ul class="list-group sticky">
+            {% assign sorted_tags = site.tags | sort %}
+            {% for category in sorted_tags %}
+            <li class="list-group-item">
+                <a href="#{{ category[0] }}">{{ category | first }}</a>
+                <span class="badge">{{ category[1].size }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <!-- </div> -->
