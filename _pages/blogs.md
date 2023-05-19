@@ -5,6 +5,9 @@ permalink: /blogs/
 author_profile: true
 ---
 
+<link rel="stylesheet" href="/assets/css/responsive.css">
+<link rel="stylesheet" href="/assets/css/index.css">
+
 <div id="main" role="main">
 {% include sidebar.html %}
 <section class="container content">
