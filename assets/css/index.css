@@ -104,7 +104,7 @@
 .list-group-item {
     position: relative;
     display: block;
-    font-family: Helvetica;
+    font-family: "Century Gothic",sans-serif;
     padding: 8px 15px;
     border-bottom: 1px solid #9a9a9a;
     background-color: #E0E0E0;
