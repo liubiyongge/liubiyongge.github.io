@@ -26,17 +26,21 @@ I am interested in storage systems, especially KV stores. My current research fo
 
 ### Publications
 
+- **Biyong Liu**, et al, "LifetimeKV: Narrowing the Lifetime Gap of SSTs in LSMT-Based KV Stores for ZNS SSDs". (In Submission)
+
 - Denghui Wu, **Biyong Liu**, Wei Zhao, Wei Tong, "ZNSKV: Reducing Data Migration in LSMT-Based KV Stores on ZNS SSDs" is accepted by 40th IEEE International Conference on Computer Design (ICCD), 2022.
 
 &ensp;&ensp;In this paper, we propose our ZNS SSD based KV store ZNSKV to reduce the redundant data migration in garbage collection and LSMT compaction. 
 
-- Xiaoling Li, Tao Zeng, **Biyong Liu**, et al. "Nonintrusive Measurement on Temporal and Spatial Features of Microservice Inferences" is accepted by 19th IEEE International Conference on Ubiquitous Intelligence and Computing (UIC), 2022.
+- Xiaoling Li, Tao Zeng, **Biyong Liu**, et al, "Nonintrusive Measurement on Temporal and Spatial Features of Microservice Inferences" is accepted by 19th IEEE International Conference on Ubiquitous Intelligence and Computing (UIC), 2022.
 
 &ensp;&ensp;In this paper, we propose a framework to provide nonintrusive measurements on microservice inference (MEME), to detect fraudulent behaviors of cloud service providers on microservice-based applications. (My undergraduate thesis)
 
 
   
 ### Internships
+
+- [Ant Group](https://www.antgroup.com/)    [OceanBase](https://www.oceanbase.com/)     2023.6 - Present,  Hangzhou, China
 
 ### Awards
 
