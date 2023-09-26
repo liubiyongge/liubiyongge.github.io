@@ -33,7 +33,7 @@ I am interested in storage systems, especially KV stores. My current research fo
 <!-- &ensp;&ensp;In this paper, we propose our ZNS SSD based KV store ZNSKV to reduce the redundant data migration in garbage collection and LSMT compaction.  -->
 
 
-- Tao Zeng, Zichen Xu, Dan Wu, Xiaoling Li, **Biyong Liu**, et al, "Exploring nonintrusive measurements of spatio-temporal portrait of microservices"
+- Tao Zeng, Zichen Xu, Dan Wu, Xiaoling Li, **Biyong Liu**, et al, "Exploring nonintrusive measurements of spatio-temporal portrait of microservices". is accepted by Software: Practice and Experience (SPE)  Preprint, 27 June 2023.
 
 
 - Xiaoling Li, Tao Zeng, **Biyong Liu**, et al, "Nonintrusive Measurement on Temporal and Spatial Features of Microservice Inferences" is accepted by 19th IEEE International Conference on Ubiquitous Intelligence and Computing (UIC), 2022.
